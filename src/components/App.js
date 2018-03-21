@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader'
 import './App.css';
 
 class App extends Component {
@@ -10,11 +11,11 @@ class App extends Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-          Hi
+          Hi Hello my name is
         </p>
       </div>
     );
   }
 }
 
-export default App;
+export default hot(module)(App) ;
