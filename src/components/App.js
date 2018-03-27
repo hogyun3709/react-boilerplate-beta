@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { hot } from "react-hot-loader";
+import Header from "../shared/Header"
 import "../styles/App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header/>
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
@@ -19,6 +21,7 @@ class App extends Component {
         <a className="button is-success">Success</a>
         <a className="button is-warning">Warning</a>
         <a className="button is-danger">Danger</a>
+
       </div>
     );
   }
